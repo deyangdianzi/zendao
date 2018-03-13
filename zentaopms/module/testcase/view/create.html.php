@@ -51,7 +51,7 @@
           </div>
         </td><td></td>
       </tr>
-      <tr>111111111111111111111111111111111111111111111
+      <tr>
         <th><?php echo $lang->testcase->type;?></th>
         <td><?php echo html::select('type', $lang->testcase->typeList, $type, "class='form-control chosen'");?></td>
         <?php if(strpos(",$showFields,", 'stage') !== false):?>
@@ -66,7 +66,6 @@
       <?php if(strpos(",$showFields,", ',story,') !== false and $this->config->global->flow != 'onlyTest'):?>
       <tr>
         <th><?php echo $lang->testcase->lblStory;?></th>
-        222222222222222222222222222222222222222222222222
         <td colspan='2'>
           <div class='input-group' id='storyIdBox'>
             <?php echo html::select('story', $stories, $storyID, 'class="form-control chosen" onchange="setPreview();" data-no_results_text="' . $lang->searchMore . '"');?>
@@ -198,6 +197,10 @@
         <td colspan='2'><?php echo html::input('keywords', $keywords, "class='form-control' autocomplete='off'");?></td>
       </tr>  
       <?php endif;?>
+      <tr>
+        <th><?php echo $lang->testcase->shorttitle;?></th>
+        <td colspan='2'><?php echo html::input('shorttitle', $shorttitle, "class='form-control' autocomplete='off'");?></td>
+      </tr>
        <tr>
         <th><?php echo $lang->testcase->files;?></th>
         <td colspan='2'><?php echo $this->fetch('file', 'buildform');?></td>
