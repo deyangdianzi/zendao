@@ -51,7 +51,7 @@
           </div>
         </td><td></td>
       </tr>
-      <tr>
+      <tr><?php echo "疑似测试用例类型的位置">
         <th><?php echo $lang->testcase->type;?></th>
         <td><?php echo html::select('type', $lang->testcase->typeList, $type, "class='form-control chosen'");?></td>
         <?php if(strpos(",$showFields,", 'stage') !== false):?>
