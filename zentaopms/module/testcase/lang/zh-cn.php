@@ -150,11 +150,13 @@ $lang->testcase->typeList['config']      = '配置相关';
 $lang->testcase->typeList['install']     = '安装部署';
 $lang->testcase->typeList['security']    = '安全相关';
 $lang->testcase->typeList['interface']   = '接口测试';
+$lang->testcase->typeList['autotest']   = '自动化测试';   //test code
 $lang->testcase->typeList['other']       = '其他';
 
 $lang->testcase->stageList['']           = '';
 $lang->testcase->stageList['unittest']   = '单元测试阶段';
 $lang->testcase->stageList['feature']    = '功能测试阶段';
+$lang->testcase->stageList['featureauto']    = '自动化测试阶段';  //test code
 $lang->testcase->stageList['intergrate'] = '集成测试阶段';
 $lang->testcase->stageList['system']     = '系统测试阶段';
 $lang->testcase->stageList['smoke']      = '冒烟测试阶段';
